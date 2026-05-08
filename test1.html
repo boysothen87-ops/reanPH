@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="km">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>វិញ្ញាសារតេស្តរូបវិទ្យា ថ្នាក់ទី១១</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Khmer+OS+Content&family=Khmer+OS+Muol+Light&display=swap');
+
+        body {
+            font-family: 'Khmer OS Content', sans-serif;
+            background-color: #f4f4.9;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            background: white;
+            margin: auto;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            font-family: 'Khmer OS Muol Light', serif;
+            color: #2c3e50;
+            text-align: center;
+            font-size: 24px;
+        }
+        .header-info {
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        .question {
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .question p {
+            font-weight: bold;
+            color: #2980b9;
+        }
+        .options label {
+            display: block;
+            margin: 5px 0;
+            cursor: pointer;
+        }
+        button {
+            background-color: #27ae60;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            font-family: 'Khmer OS Content';
+            display: block;
+            margin: 20px auto;
+        }
+        button:hover {
+            background-color: #219150;
+        }
+        #result {
+            text-align: center;
+            font-size: 22px;
+            font-weight: bold;
+            margin-top: 20px;
+            display: none;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .correct { color: #27ae60; }
+        .wrong { color: #e74c3c; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header-info">
+        <h1>វិញ្ញាសារតេស្តរូបវិទ្យា ថ្នាក់ទី១១</h1>
+        <p>ជំពូក២៖ អគ្គិសនី និងម៉ាញ៉េទិច (មេរៀនទី១ និងទី២)</p>
+        <p>ពិន្ទុទម្ងន់៖ ៥០ (១សំណួរ = ៥ពិន្ទុ) | រយៈពេល៖ ៤៥ នាទី</p>
+    </div>
+
+    <form id="quizForm">
+        <!-- Question 1 -->
+        <div class="question">
+            <p>១. តើឯកតាដែនម៉ាញ៉េទិច (B) ក្នុងប្រព័ន្ធអន្តរជាតិ (SI) គឺជាអ្វី?</p>
+            <div class="options">
+                <label><input type="radio" name="q1" value="A"> A. ញូតុន (N)</label>
+                <label><input type="radio" name="q1" value="B"> B. តេស្លា (T)</label>
+                <label><input type="radio" name="q1" value="C"> C. វ៉ុល (V)</label>
+                <label><input type="radio" name="q1" value="D"> D. អំពែ (A)</label>
+            </div>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="question">
+            <p>២. ខ្សែដែនម៉ាញ៉េទិចរបស់មេដែកមានទិសដៅយ៉ាងដូចម្តេច?</p>
+            <div class="options">
+                <label><input type="radio" name="q2" value="A"> A. ចេញពីប៉ូលត្បូង ចូលទៅប៉ូលជើង</label>
+                <label><input type="radio" name="q2" value="B"> B. ចេញពីប៉ូលជើង ចូលទៅប៉ូលត្បូង</label>
+                <label><input type="radio" name="q2" value="C"> C. ចេញពីកណ្តាលទៅសងខាង</label>
+                <label><input type="radio" name="q2" value="D"> D. គ្មានទិសដៅច្បាស់លាស់</label>
+            </div>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="question">
+            <p>៣. រូបមន្តដែនម៉ាញ៉េទិចនៃចរន្តត្រង់វែងឆ្ងាយគឺ៖</p>
+            <div class="options">
+                <label><input type="radio" name="q3" value="A"> A. B = 2.10⁻⁷ . (I/r)</label>
+                <label><input type="radio" name="q3" value="B"> B. B = 2π.10⁻⁷ . (I/r)</label>
+                <label><input type="radio" name="q3" value="C"> C. B = 4π.10⁻⁷ . (NI/L)</label>
+                <label><input type="radio" name="q3" value="D"> D. B = I.L.B sinθ</label>
+            </div>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="question">
+            <p>៤. ដែនម៉ាញ៉េទិចឯកសណ្ឋានគឺជាដែនម៉ាញ៉េទិចដែល៖</p>
+            <div class="options">
+                <label><input type="radio" name="q4" value="A"> A. មានទិសដៅខុសៗគ្នាគ្រប់ចំណុច</label>
+                <label><input type="radio" name="q4" value="B"> B. មានតម្លៃប្រែប្រួលតាមពេលវេលា</label>
+                <label><input type="radio" name="q4" value="C"> C. មានតម្លៃ ទិសដៅ និងន័យដូចគ្នាគ្រប់ចំណុច</label>
+                <label><input type="radio" name="q4" value="D"> D. កើតឡើងតែនៅជុំវិញមេដែកដែកគោល</label>
+            </div>
+        </div>
+
+        <!-- Question 5 -->
+        <div class="question">
+            <p>៥. តើគេប្រើវិធានអ្វីដើម្បីកំណត់ទិសដៅខ្សែដែនម៉ាញ៉េទិចនៃចរន្តអគ្គិសនី?</p>
+            <div class="options">
+                <label><input type="radio" name="q5" value="A"> A. វិធានមេដៃឆ្វេង</label>
+                <label><input type="radio" name="q5" value="B"> B. វិធានដៃស្តាំ</label>
+                <label><input type="radio" name="q5" value="C"> C. ច្បាប់អូម</label>
+                <label><input type="radio" name="q5" value="D"> D. ច្បាប់ឡិន (Lenz)</label>
+            </div>
+        </div>
+
+        <!-- Question 6 -->
+        <div class="question">
+            <p>៦. កម្លាំងឡាប្លាស (Laplace Force) គឺជាកម្លាំងដែលម៉ាញ៉េទិចមានអំពើលើ៖</p>
+            <div class="options">
+                <label><input type="radio" name="q6" value="A"> A. បន្ទុកអគ្គិសនីនៅនឹងថ្កល់</label>
+                <label><input type="radio" name="q6" value="B"> B. មេដែកពីរដាក់ជិតគ្នា</label>
+                <label><input type="radio" name="q6" value="C"> C. របារចម្លងដែលមានចរន្តឆ្លងកាត់ដាក់ក្នុងដែនម៉ាញ៉េទិច</label>
+                <label><input type="radio" name="q6" value="D"> D. រេស៊ីស្តង់</label>
+            </div>
+        </div>
+
+        <!-- Question 7 -->
+        <div class="question">
+            <p>៧. រូបមន្តកម្លាំងឡាប្លាសគឺ F = I.l.B.sinθ ។ តើ θ ជាមុំរវាងអ្វី និងអ្វី?</p>
+            <div class="options">
+                <label><input type="radio" name="q7" value="A"> A. រវាងខ្សែចម្លង និងដី</label>
+                <label><input type="radio" name="q7" value="B"> B. រវាងទិសដៅចរន្ត (I) និងទិសដៅដែនម៉ាញ៉េទិច (B)</label>
+                <label><input type="radio" name="q7" value="C"> C. រវាងមេដែក និងខ្សែចម្លង</label>
+                <label><input type="radio" name="q7" value="D"> D. រវាងកម្លាំង និងល្បឿន</label>
+            </div>
+        </div>
+
+        <!-- Question 8 -->
+        <div class="question">
+            <p>៨. កម្លាំងម៉ាញ៉េទិចដែលមានអំពើលើបន្ទុកអគ្គិសនីដែលកំពុងចលនាហៅថា៖</p>
+            <div class="options">
+                <label><input type="radio" name="q8" value="A"> A. កម្លាំងគូឡុំ</label>
+                <label><input type="radio" name="q8" value="B"> B. កម្លាំងអេឡិចត្រូស្តាទិច</label>
+                <label><input type="radio" name="q8" value="C"> C. កម្លាំងឡូរ៉ិន (Lorentz Force)</label>
+                <label><input type="radio" name="q8" value="D"> D. កម្លាំងទំនាញសកល</label>
+            </div>
+        </div>
+
+        <!-- Question 9 -->
+        <div class="question">
+            <p>៩. បើបន្ទុកអគ្គិសនីបោះចូលក្នុងដែនម៉ាញ៉េទិចស្របនឹងទិសដៅខ្សែដែន តើកម្លាំងម៉ាញ៉េទិចមានតម្លៃប៉ុន្មាន?</p>
+            <div class="options">
+                <label><input type="radio" name="q9" value="A"> A. មានតម្លៃអតិបរមា</label>
+                <label><input type="radio" name="q9" value="B"> B. មានតម្លៃស្មើរសូន្យ (F = 0)</label>
+                <label><input type="radio" name="q9" value="C"> C. មានតម្លៃថេរ</label>
+                <label><input type="radio" name="q9" value="D"> D. មានតម្លៃអវិជ្ជមាន</label>
+            </div>
+        </div>
+
+        <!-- Question 10 -->
+        <div class="question">
+            <p>១០. ឧបករណ៍ដែលបំប្លែងថាមពលអគ្គិសនី ទៅជាថាមពលមេកានិចដោយប្រើឥទ្ធិពលម៉ាញ៉េទិចគឺ៖</p>
+            <div class="options">
+                <label><input type="radio" name="q10" value="A"> A. ឌីណាម៉ូ</label>
+                <label><input type="radio" name="q10" value="B"> B. ម៉ូទ័រអគ្គិសនី</label>
+                <label><input type="radio" name="q10" value="C"> C. អាគុយ</label>
+                <label><input type="radio" name="q10" value="D"> D. អំពូលភ្លើង</label>
+            </div>
+        </div>
+
+        <button type="button" onclick="calculateScore()">បញ្ជូនចម្លើយ</button>
+    </form>
+
+    <div id="result"></div>
+</div>
+
+<script>
+    function calculateScore() {
+        const answers = {
+            q1: "B",
+            q2: "B",
+            q3: "A",
+            q4: "C",
+            q5: "B",
+            q6: "C",
+            q7: "B",
+            q8: "C",
+            q9: "B",
+            q10: "B"
+        };
+
+        let score = 0;
+        let totalQuestions = 10;
+        let form = document.getElementById('quizForm');
+        let formData = new FormData(form);
+
+        for (let [key, value] of Object.entries(answers)) {
+            if (formData.get(key) === value) {
+                score += 5;
+            }
+        }
+
+        let resultDiv = document.getElementById('result');
+        resultDiv.style.display = 'block';
+        resultDiv.innerHTML = `អ្នកទទួលបានពិន្ទុ៖ ${score} / 50`;
+        
+        if (score >= 25) {
+            resultDiv.className = 'correct';
+            resultDiv.innerHTML += "<br>លទ្ធផល៖ ជាប់! ព្យាយាមបន្តទៀត។";
+        } else {
+            resultDiv.className = 'wrong';
+            resultDiv.innerHTML += "<br>លទ្ធផល៖ ធ្លាក់! សូមរំលឹកមេរៀនឡើងវិញ។";
+        }
+        
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+</script>
+
+</body>
+</html>
